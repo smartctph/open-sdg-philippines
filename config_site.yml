@@ -4,9 +4,9 @@
 remote_theme: open-sdg/open-sdg@master
 
 # Replace this title as needed.
-title: Indicators For The Sustainable Development Goals
+title: Indicators For The Sustainable Development Goals -- Philippines
 # Replace the baseurl with the name of this repository.
-baseurl: "/open-sdg-simple-starter"
+baseurl: "/open-sdg-philippines"
 environment: staging
 source: www
 local_data_folder: _build
@@ -43,12 +43,12 @@ email_contacts:
 # International Support
 # Eg name: Australia and adjective: Australian
 country:
-  name: Australia
-  adjective: Australian
+  name: Philippines
+  adjective: Philippine
 
 # Optionally uncomment and update the settings below to control the frontpage heading and instructions.
-#frontpage_heading: Australian data for Sustainable Development Goal indicators
-#frontpage_instructions: Click on each goal, or <span id="jump-to-search"><a>search</a></span>, for Australian statistics for Sustainable Development Goal global indicators.
+frontpage_heading: Philippine data for Sustainable Development Goal indicators
+frontpage_instructions: Click on each goal, or <span id="jump-to-search"><a>search</a></span>, for Philippine statistics for Sustainable Development Goal global indicators.
 
 # Menu
 menu:
