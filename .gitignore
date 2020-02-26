@@ -1,0 +1,13 @@
+_site/
+_build/
+venv/
+.sass-cache/
+.jekyll-metadata
+.DS_Store
+.Rproj.user
+.Rhistory
+.spyproject/
+*__pycache__/
+*.Rproj
+Gemfile.lock
+.vscode/

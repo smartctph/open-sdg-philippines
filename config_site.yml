@@ -1,0 +1,103 @@
+# Jekyll configuration for Open SDG platform
+
+# Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
+remote_theme: open-sdg/open-sdg@master
+
+# Replace this title as needed.
+title: Indicators For The Sustainable Development Goals
+# Replace the baseurl with the name of this repository.
+baseurl: "/open-sdg-simple-starter"
+environment: staging
+source: www
+local_data_folder: _build
+
+# The list of languages that are translated. The first one is the default.
+languages:
+  - en
+
+# URL for the "Edit Data" button on indicators.
+data_edit_url: http://prose.io/#my-org/my-repo/edit/develop/data/indicator_[id].csv
+# URL for the "Edit Metadata" button on indicators.
+metadata_edit_url: http://prose.io/#my-org/my-repo/edit/develop/meta/[id].md
+
+# Automatically create indicator pages, goal pages,
+# and some other required pages.
+create_indicators:
+  layout: indicator
+create_goals:
+  layout: goal
+create_pages: true
+
+#analytics:
+#  ga_prod: ''
+
+# Sticky share buttons (facebook, twitter and email)
+#sharethis_property: ''
+
+# Replace the email addresses below.
+email_contacts:
+  questions: test@example.com
+  suggestions: test@example.com
+  functional: test@example.com
+
+# International Support
+# Eg name: Australia and adjective: Australian
+country:
+  name: Australia
+  adjective: Australian
+
+# Optionally uncomment and update the settings below to control the frontpage heading and instructions.
+#frontpage_heading: Australian data for Sustainable Development Goal indicators
+#frontpage_instructions: Click on each goal, or <span id="jump-to-search"><a>search</a></span>, for Australian statistics for Sustainable Development Goal global indicators.
+
+# Menu
+menu:
+  # Use these to customise the main navigation.
+  - path: reporting-status
+    # The "translation_key" refers to the key in the SDG Translations repository.
+    translation_key: menu.reporting_status
+  - path: about
+    translation_key: menu.about
+  - path: guidance
+    translation_key: menu.guidance
+  - path: faq
+    translation_key: menu.faq
+  - path: news
+    translation_key: menu.updates
+
+# Footer Menu
+footer_menu:
+  - path: mailto:my-email-address@example.com
+    translation_key: menu.contact_us
+  - path: https://twitter.com/MyTwitterAccount
+    translation_key: general.twitter
+  - path: https://facebook.com/MyFacebookAccount
+    translation_key: general.facebook
+  - path: about/cookies-and-privacy
+    translation_key: menu.cookies
+
+# Configure the text (or "translation key") to be used on the
+# non-global metadata tab.
+non_global_metadata: indicator.national_metadata
+
+# Set a base for all goal image URLs. Note that the full goal image path will be
+# the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
+goal_image_base: https://open-sdg.github.io/translations-un-sdg/assets/img/goals
+
+# Tell Jekyll to use the Remote Theme plugin.
+plugins:
+  - jekyll-remote-theme
+  - jekyll-open-sdg-plugins
+
+# Pages
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+  posts:
+    output: true
+    permalink: /news/:year/:month/:day/:title.html
+  indicators:
+    output: true
+  goals:
+    output: true
