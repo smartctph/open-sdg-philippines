@@ -75,7 +75,8 @@ ul {
     border-bottom: 1pt solid black; }
 
 body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px; }
 
 h1 {
   font-size: 36px; }
@@ -85,9 +86,6 @@ h2 {
 
 h3 {
   font-size: 24px; }
-
-.normal-copy {
-  font-size: 16px; }
 
 .lead-copy {
   font-size: 22px; }
@@ -965,7 +963,7 @@ header .container {
       height: 34px;
       transition: width 0.4s;
       margin-top: 5px;
-      font-size: 15px; }
+      font-size: 16px; }
 
 #search-btn {
   height: 34px; }
