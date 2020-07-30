@@ -712,6 +712,15 @@ body.contrast-high a.nav-link:focus {
   background: white;
   color: black; }
 
+.card .card-title {
+  border-top: 2px solid;
+  border-color: #ccc;
+  padding-top: 7px; }
+.card img {
+  max-width: 100%; }
+.card .btn {
+  white-space: normal; }
+
 #accessibility-nav {
   padding-top: 20px;
   padding-right: 10px;
@@ -1413,10 +1422,18 @@ footer {
     right: 0;
     display: inline;
     font-size: 12px; }
-    #main-content.goal-indicators .indicator-cards span.status.complete, #main-content.goal-indicators .indicator-cards span.status.inprogress {
-      color: white; }
+    #main-content.goal-indicators .indicator-cards span.status.complete {
+      color: white;
+      border: none; }
+    #main-content.goal-indicators .indicator-cards span.status.inprogress {
+      color: white;
+      border: none; }
     #main-content.goal-indicators .indicator-cards span.status.notstarted {
+      color: #333;
       border: 1px solid black; }
+    #main-content.goal-indicators .indicator-cards span.status.notapplicable {
+      color: #333;
+      border: none; }
 #main-content.goal-indicators .indicator-cards .tags {
   padding: 0;
   margin: 6px 10px 0 0;
@@ -1629,16 +1646,17 @@ body.contrast-high #main-content.goal-indicators.goal-by-target .indicator-cards
     width: 40px;
     text-align: center;
     font-size: 16px; }
+    #main-content .statuses > div .status.complete {
+      border: none;
+      color: white; }
+    #main-content .statuses > div .status.inprogress {
+      border: none;
+      color: white; }
     #main-content .statuses > div .status.notstarted {
       border: 1px solid black;
       color: #333; }
-    #main-content .statuses > div .status.complete {
-      color: white; }
-    #main-content .statuses > div .status.inprogress {
-      color: white; }
-    #main-content .statuses > div .status.notstarted {
-      color: #333; }
     #main-content .statuses > div .status.notapplicable {
+      border: none;
       color: #333; }
 #main-content .value {
   color: #333;
@@ -1796,3 +1814,14 @@ body.contrast-high #search-results .search-result .content {
       right: 15px;
       margin-top: 0;
       margin-bottom: 0; } }
+
+.layout-frontpage-alt .frontpage-goals-grid {
+  margin: 40px 0 20px 0;
+  border-top: 2px solid #ccc; }
+@media only screen and (min-width: 992px) {
+  .layout-frontpage-alt .goal-tiles .goal-tile {
+    width: 11%; } }
+.layout-frontpage-alt .frontpage-cards {
+  margin-top: 40px; }
+  .layout-frontpage-alt .frontpage-cards .row {
+    margin-bottom: 20px; }
