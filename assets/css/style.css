@@ -1611,7 +1611,7 @@ footer {
     #main-content #legend li:hover {
       background: #eee; }
     #main-content #legend li.notshown button {
-      text-decoration: line-through; }
+      text-decoration: line-through !important; }
   #main-content #legend .swatch {
     display: inline-block;
     width: 45px;
@@ -1773,6 +1773,9 @@ footer {
   font-size: 12px;
   line-height: 1.2;
   padding-left: 20px; }
+
+caption {
+  color: #0b0c0c; }
 
 .table-footer-text dl dt {
   float: left;
