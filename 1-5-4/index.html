@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-philippines/assets/css/style.css?v=20201015011011">
+        <link rel="stylesheet" href="/open-sdg-philippines/assets/css/style.css?v=20201016011132">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -167,12 +167,32 @@ var translations = {
         <li id="menuToggle"
             aria-label="Menu toggle. Click to expand or collapse the menu."
             aria-haspopup="true">
-          <button data-target="menu" aria-expanded="false">Menu</button>
+          <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+          <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
+    <a href="/open-sdg-philippines/reporting-status">Reporting Status</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-philippines/about">About</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-philippines/guidance">Guidance</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-philippines/faq">FAQ</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-philippines/news">Updates</a>
+    </li></ul>
+
         </li>
         <li id="searchToggle"
             aria-label="Search toggle. Click to expand or collapse the search bar."
             aria-haspopup="true">
-          <button data-target="search" aria-expanded="false">Search</button>
+          <button data-target="search-mobile" aria-expanded="false">Search</button>
+          <div id="search-mobile" class="menu-target">
+  <form action="/open-sdg-philippines/search">
+    <input type="text" name="q" id="indicator_search-mobile" title="Search" />
+    <label class="sr-only" for="indicator_search-mobile">Search</label>
+    <button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  </form>
+</div>
+
         </li>
       </ul>
 
@@ -186,16 +206,17 @@ var translations = {
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-            <a href="/open-sdg-philippines/reporting-status">Reporting Status</a>
-          </li><li class="nav-link ">
-            <a href="/open-sdg-philippines/about">About</a>
-          </li><li class="nav-link ">
-            <a href="/open-sdg-philippines/guidance">Guidance</a>
-          </li><li class="nav-link ">
-            <a href="/open-sdg-philippines/faq">FAQ</a>
-          </li><li class="nav-link ">
-            <a href="/open-sdg-philippines/news">Updates</a>
-          </li></ul>
+    <a href="/open-sdg-philippines/reporting-status">Reporting Status</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-philippines/about">About</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-philippines/guidance">Guidance</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-philippines/faq">FAQ</a>
+    </li><li class="nav-link ">
+    <a href="/open-sdg-philippines/news">Updates</a>
+    </li></ul>
+
 
     </nav>
   </div>
@@ -958,7 +979,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-philippines/assets/js/sdg.js?v=20201015011011'></script><script>
+<script src='/open-sdg-philippines/assets/js/sdg.js?v=20201016011132'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
